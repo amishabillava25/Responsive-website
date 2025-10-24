@@ -1,0 +1,188 @@
+/* ====== General Styles ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+/* ====== Navigation Bar ====== */
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* ====== Hero Section ====== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 40px auto;
+  gap: 20px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  color: #555;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  border: none;
+  background: #00bcd4;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-text button:hover {
+  background: #0097a7;
+}
+
+.hero-image img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ====== Services Section ====== */
+.services {
+  text-align: center;
+  padding: 40px 0;
+  background: #f4f4f4;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.service-box {
+  background: white;
+  padding: 20px;
+  width: 30%;
+  min-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service-box h3 {
+  margin-bottom: 10px;
+  color: #00bcd4;
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 15px 0;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  /* Stack nav links vertically */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Hero section: stack text and image */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+  /* Service boxes stacked */
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-box {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  /* Reduce text size for small screens */
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
